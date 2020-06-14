@@ -3,7 +3,7 @@
     "short_name": "BENE",
     "theme_color": "#193380",
     "background_color": "#193380",
-    "display": "standalone",
+    "display": "fullscreen",
     "orientation": "portrait",
     "Scope": "https://dallatorre-io.github.io/bemestarnaestrada/",
     "start_url": "index.html",
