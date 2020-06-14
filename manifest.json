@@ -5,8 +5,8 @@
     "background_color": "#193380",
     "display": "standalone",
     "orientation": "portrait",
-    "Scope": "/index.html",
-    "start_url": "/index.html",
+    "Scope": "https://dallatorre-io.github.io/bemestarnaestrada/",
+    "start_url": "https://dallatorre-io.github.io/bemestarnaestrada/",
     "icons": [
       {
         "src": "img/icons/icon-72x72.png",
