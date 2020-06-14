@@ -6,7 +6,7 @@
     "display": "standalone",
     "orientation": "portrait",
     "Scope": "https://dallatorre-io.github.io/bemestarnaestrada/",
-    "start_url": "https://dallatorre-io.github.io/bemestarnaestrada/",
+    "start_url": "index.html",
     "icons": [
       {
         "src": "img/icons/icon-72x72.png",
