@@ -1,9 +1,9 @@
 {
     "name": "Bem Estar na Estrada",
     "short_name": "Bem Estar na Estrada",
-    "start_url": "/index.php",
+    "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#git 193380",
+    "background_color": "#193380",
     "theme_color": "#FFFFFF",
     "orientation": "portrait-primary",
     "icons": [
