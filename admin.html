@@ -36,7 +36,8 @@
                 <li><a href="#0"><div class="image-icon"><img src="img/arma-icon.png"></div><h6>Segurança</h6></a></li>
                 <li><a href="#0"><div class="image-icon"><img src="img/manutencao-icon.png"></div><h6>Manutenção</h6></a></li>
                 <li><a href="#0"><div class="image-icon"><img src="img/bem-estar-icon.png"></div><h6>Bem-Estar</h6></a></li>
-                <li><a href="index.html"><div class="image-icon"><img src="img/sair-icon.png"></div><h6>Sair</h6></a></li>
+                <li><a href="#0"><div class="image-icon"><img src="img/luz-icon.png"></div><h6>Sujestão</h6></a></li>
+                <li><a href="login.html"><div class="image-icon"><img src="img/sair-icon.png"></div><h6>Sair</h6></a></li>
               </ul>
             </nav> 
           </div> <!-- .cd-slider-nav -->
@@ -69,33 +70,42 @@
                                 <form action="#" method="post">
                                     <div id="divNomeFunc">
                                         <div class="form-group">
-                                            <label>Nome</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="nome" id="nome"/>
-                                            <label id="val_nome" class="validar"></label>
+                                            <label>Local do Roubo:</label>
+                                            <input class="form-control" placeholder="Digite aqui..." name="roubo" id="roubo"/>
+                                            <label id="val_roubo" class="validar"></label>
                                         </div>
-                                        <!--Arrumando Sobrenome, arrumar a controller, dao, sql, criar uma coluna sobrenome na tb_funcionario-->
                                         <div class="form-group">
-                                            <label>Sobrenome</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="sobrenome" id="sobrenome"/>
-                                            <label id="val_sobrenome" class="validar"></label>
+                                            <label>Modelo:</label>
+                                            <input class="form-control" placeholder="Digite aqui..." name="modelo" id="modelo"/>
+                                            <label id="val_modelo" class="validar"></label>
                                         </div> 
                                     </div>    
                                     <div id="divGeral">                        
                                         <div class="form-group">
-                                            <label>E-mail</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="email" id="email" onchange="ValidarEmail(1)"/>
-                                            <label id="val_email" class="validar"></label>
+                                            <label>Marca:</label>
+                                            <input class="form-control" placeholder="Digite aqui..." name="marca" id="marca"/>
+                                            <label id="val_marca" class="validar"></label>
                                         </div>
                                         <div class="form-group">
-                                            <label>Telefone</label>
-                                            <input class="form-control tel" placeholder="Digite aqui..." name="telefone" id="telefone"/>
-                                            <label id="val_telefone" class="validar"></label>
+                                            <label>Cor:</label>
+                                            <input class="form-control tel" placeholder="Digite aqui..." name="cor" id="cor"/>
+                                            <label id="val_cor" class="validar"></label>
                                         </div>
                                         <div class="form-group">
-                                            <label>Endereço</label>
+                                            <label>Placa:</label>
                                             <input class="form-control" placeholder="Digite aqui..." name="endereco" id="endereco"/>
                                             <label id="val_endereco" class="validar"></label>
                                         </div>
+                                        <div class="form-group">
+                                          <label>Foto: <b>(Opcional)</b></label>
+                                          <input type="file" name="endereco" id="endereco"/>
+                                          <label id="val_endereco" class="validar"></label>
+                                      </div>
+                                      <div class="form-group">
+                                        <label>Observação: <b>(Opcional)</b></label>
+                                        <textarea class="form-control" placeholder="Digite aqui..."></textarea>
+                                        <label id="val_endereco" class="validar"></label>
+                                    </div>
                                     </div>
                                     <center>        
                                     <button class="btn btn-success" name="btnSalvar" onclick="">Salvar</button>
@@ -116,7 +126,7 @@
             <li>
               <div class="heading">
                 <h1>Manutenção</h1>
-                <span>Verifique informações de manutenção e colabore com seu amigos de estrada.</span> 
+                <span>Verifique informações de manutenção e colabore com os seus amigos de estrada.</span> 
               </div>
               <div class="cd-half-width third-slide">
                 <div class="container">
@@ -130,42 +140,37 @@
                                 <div class="row">
                                   <center>
                                     <div class="col-md-12">
-                                        <h2>Nova Ocorrência</h2>   
-                                        <h5>Cadastre aqui a sua ocorrência.</h5>
+                                        <h2>Compartilhe sua experiência</h2>   
+                                        <h5>Aqui você pode colocar informações de manutenção.</h5>
                                     </div>
                                     </center>
                                 </div>
                                 <!-- /. ROW  -->
                                 <hr/>
                                 <form action="#" method="post">
+                                  <div id="divNomeFunc">
+                                    <div class="form-group">
+                                        <label>Localização:</label>
+                                        <input class="form-control" placeholder="Digite aqui..." name="nome" id="nome"/>
+                                    </div>
                                     <div id="divNomeFunc">
                                         <div class="form-group">
-                                            <label>Nome</label>
+                                            <label>Troca de Oléo:</label>
                                             <input class="form-control" placeholder="Digite aqui..." name="nome" id="nome"/>
-                                            <label id="val_nome" class="validar"></label>
                                         </div>
-                                        <!--Arrumando Sobrenome, arrumar a controller, dao, sql, criar uma coluna sobrenome na tb_funcionario-->
                                         <div class="form-group">
-                                            <label>Sobrenome</label>
+                                            <label>Pneu:</label>
                                             <input class="form-control" placeholder="Digite aqui..." name="sobrenome" id="sobrenome"/>
-                                            <label id="val_sobrenome" class="validar"></label>
                                         </div> 
                                     </div>    
                                     <div id="divGeral">                        
                                         <div class="form-group">
-                                            <label>E-mail</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="email" id="email" onchange="ValidarEmail(1)"/>
-                                            <label id="val_email" class="validar"></label>
+                                            <label>Mecânico</label>
+                                            <input class="form-control" placeholder="Digite aqui..." name="email" id="email"/>
                                         </div>
                                         <div class="form-group">
-                                            <label>Telefone</label>
+                                            <label>Combustível:</label>
                                             <input class="form-control tel" placeholder="Digite aqui..." name="telefone" id="telefone"/>
-                                            <label id="val_telefone" class="validar"></label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Endereço</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="endereco" id="endereco"/>
-                                            <label id="val_endereco" class="validar"></label>
                                         </div>
                                     </div>
                                     <center>        
@@ -200,48 +205,55 @@
                                 <div class="row">
                                   <center>
                                     <div class="col-md-12">
-                                        <h2>Nova Ocorrência</h2>   
-                                        <h5>Cadastre aqui a sua ocorrência.</h5>
+                                        <h2>Como está a sua saúde.</h2>   
+                                        <h5>Aqui você conta, como está sendo o seu dia-a-dia.</h5>
                                     </div>
                                     </center>
                                 </div>
                                 <!-- /. ROW  -->
                                 <hr/>
                                 <form action="#" method="post">
-                                    <div id="divNomeFunc">
-                                        <div class="form-group">
-                                            <label>Nome</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="nome" id="nome"/>
-                                            <label id="val_nome" class="validar"></label>
-                                        </div>
-                                        <!--Arrumando Sobrenome, arrumar a controller, dao, sql, criar uma coluna sobrenome na tb_funcionario-->
-                                        <div class="form-group">
-                                            <label>Sobrenome</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="sobrenome" id="sobrenome"/>
-                                            <label id="val_sobrenome" class="validar"></label>
-                                        </div> 
-                                    </div>    
+                                  <div id="divGeral">                        
+                                    <div class="form-group">
+                                        <label>Como você está hoje ?</label>
+                                        <input class="form-control" placeholder="Digite aqui..." name="pertunta1" id="pertunta1"/>
+                                    </div>
                                     <div id="divGeral">                        
                                         <div class="form-group">
-                                            <label>E-mail</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="email" id="email" onchange="ValidarEmail(1)"/>
-                                            <label id="val_email" class="validar"></label>
+                                            <label>Você dormiu bem ?</label>
+                                            <input class="form-control" placeholder="Digite aqui..." name="pertunta2" id="pertunta2"/>
                                         </div>
                                         <div class="form-group">
-                                            <label>Telefone</label>
-                                            <input class="form-control tel" placeholder="Digite aqui..." name="telefone" id="telefone"/>
-                                            <label id="val_telefone" class="validar"></label>
+                                            <label>Como está a sua alimentação ?</label>
+                                            <input class="form-control tel" placeholder="Digite aqui..." name="pertunta3" id="pertunta3"/>
                                         </div>
                                         <div class="form-group">
-                                            <label>Endereço</label>
-                                            <input class="form-control" placeholder="Digite aqui..." name="endereco" id="endereco"/>
-                                            <label id="val_endereco" class="validar"></label>
+                                            <label>Realiza alguma atividade fisíca ?</label>
+                                            <input class="form-control" placeholder="Digite aqui..." name="pertunta4" id="pertunta4"/>
                                         </div>
                                     </div>
                                     <center>        
                                     <button class="btn btn-success" name="btnSalvar" onclick="">Salvar</button>
                                     </center>
                                 </form>
+                                <hr>
+                                <center>
+                                  <div class="col-md-12">
+                                      <h2>Calcular Alimentação.</h2>   
+                                      <h5>Aqui você realiza o cálculo da sua alimentação, antes de viajar.</h5>
+                                  </div>
+                                  </center>
+                                <form action="#" method="post">
+                                  <div id="divGeral">                        
+                                    <div class="form-group">
+                                        <label>Quantos dias ?</label>
+                                        <input class="form-control" placeholder="Digite aqui..." name="calcular_alimentacao" id="calcular_alimentacao"/>
+                                    </div>
+                                    <center>        
+                                    <button class="btn btn-info" name="btnSalvar" onclick="">Calcular</button>
+                                    </center>
+                                </form>
+
                             </div>
                           </div>
                         </div>
@@ -259,7 +271,7 @@
         <footer>
           <p>&copy; 2020 Bem Estar na Estrada
                                 
-        	| Equipe: <em> EW WebSites</em></p>
+        	| Equipe: <em> EW</em></p>
         </footer>
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -268,6 +280,5 @@
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-
     </body>
 </html>

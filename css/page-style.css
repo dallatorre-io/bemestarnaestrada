@@ -9,6 +9,10 @@ p {
   line-height: 25px;
 }
 
+b{
+  color: #dddddd;
+}
+
 video { 
     position: fixed;
     top: 50%;
