@@ -165,114 +165,99 @@
                                 </div>                  
                             </div>
                         </div>
-
                     </li>
 
-                    <li>
+                    <li class="selected">
                         <div class="heading">
                             <h1>Manutenção</h1>
                             <span>Verifique informações de manutenção e colabore com os seus amigos de estrada.</span> 
                         </div>
-
-                        <div class="container">
-                            <div class="table-wrapper">
-                                <div class="table-title">
-                                    <div class="row">
-                                        <div class="col-sm-8">
-                                            <center><h4>Adicione seus Orçamentos</h4></></center>
+                        <div class="cd-half-width third-slide">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="content third-content">
+                                            <div class="row">
+                                                <div id="page-wrapper" >
+                                                    <div class="col-md-12">
+                                                        <div id="page-inner">
+                                                            <div class="row">
+                                                                <center>
+                                                                    <div class="col-md-12">
+                                                                        <h2>Nova Ocorrência</h2>   
+                                                                        <h5>Cadastre aqui a sua ocorrência.</h5>
+                                                                    </div>
+                                                                </center>
+                                                            </div>
+                                                            <!-- /. ROW  -->
+                                                            <hr/>
+                                                            <a href="#"><i class="fa fa-plus"></i> Adicionar nova ocorrênica</a>
+                                                            <div class="panel-body">
+                                                                <div class="table-responsive">
+                                                            <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                                                <thead>
+                                                                    <tr class="tr_color">
+                                                                        <th>Empresa</th>
+                                                                        <th>Telefone</th>
+                                                                        <th>Tipo</th>
+                                                                        <th>Valor</th>
+                                                                        <th>Ação</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                        <tr class="odd gradeX tr_color">
+                                                                            <td>M 1</td>
+                                                                            <td>(44) 9999-9999</td>
+                                                                            <td>Pneu</td>
+                                                                            <td>R$ 1.200,00</td>
+                                                                                <td>
+                                                                                    <a href="#"><i class="fa fa-pencil fa-2x"></i></a>
+                                                                                    <a href="#"><i class="fa fa-trash-o fa-2x"></i></a>
+                                                                                </td>
+                                                                        </tr>
+                                                                        <tr class="odd gradeX tr_color">
+                                                                            <td>M 2</td>
+                                                                            <td>(43) 9999-9999</td>
+                                                                            <td>Troca de Óleo</td>
+                                                                            <td>3X R$ 274,00 à vista R$ 822,00</td>
+                                                                                <td>
+                                                                                    <a href="#"><i class="fa fa-pencil fa-2x"></i></a>
+                                                                                    <a href="#"><i class="fa fa-trash-o fa-2x"></i></a>
+                                                                                </td>
+                                                                        </tr>
+                                                                        <tr class="odd gradeX tr_color">
+                                                                            <td>M 3</td>
+                                                                            <td>(44) 9999-9999</td>
+                                                                            <td>Axor </td>
+                                                                            <td>R$ 1.400,00 limitado a 12 meses ou 60 mil quilômetros</td>
+                                                                                <td>
+                                                                                    <a href="#"><i class="fa fa-pencil fa-2x"></i></a>
+                                                                                    <a href="#"><i class="fa fa-trash-o fa-2x"></i></a>
+                                                                                </td>
+                                                                        </tr>
+                                                                        <tr class="odd gradeX tr_color">
+                                                                            <td>M 4</td>
+                                                                            <td>(44) 9999-9999</td>
+                                                                            <td>Revisão</td>
+                                                                            <td>R$ 900,00</td>
+                                                                                <td>
+                                                                                    <a href="#"><i class="fa fa-pencil fa-2x"></i></a>
+                                                                                    <a href="#"><i class="fa fa-trash-o fa-2x"></i></a>
+                                                                                </td>
+                                                                        </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Adicionar</span></a>
-                                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
-                                        </div>
-
                                     </div>
-                                </div>
-
-                                <table class="table table-striped table-hover">
-
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <span class="custom-checkbox">
-                                                    <input type="checkbox" id="selectAll">
-                                                    <label for="selectAll"></label>
-                                                </span>
-                                            </th>
-                                            <th>Nome</th>
-                                            <th>Preço</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <span class="custom-checkbox">
-                                                    <input type="checkbox" id="checkbox1" name="options[]" value="1">
-                                                    <label for="checkbox1"></label>
-                                                </span>
-                                            </td>
-                                            <td>Manutenção</td>
-                                            <td>90R$</td>
-                                            <td>
-                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-target="#addhor" title="Edit">&#xE254;</i></a>
-                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <span class="custom-checkbox">
-                                                    <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                                                    <label for="checkbox5"></label>
-                                                </span>
-                                            </td>
-                                            <td>Pneu</td>
-                                            <td>350R$</td>
-                                            <td>
-                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                            </td>
-                                        </tr> 
-
-                                        <tr>
-                                            <td>
-                                                <span class="custom-checkbox">
-                                                    <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                                                    <label for="checkbox5"></label>
-                                                </span>
-                                            </td>
-                                            <td>Oléo</td>
-                                            <td>50R$</td>
-                                            <td>
-                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                            </td>
-                                        </tr> 
-
-                                        <tr>
-                                            <td>
-                                                <span class="custom-checkbox">
-                                                    <input type="checkbox" id="checkbox5" name="options[]" value="1">
-                                                    <label for="checkbox5"></label>
-                                                </span>
-                                            </td>
-                                            <td>Conserto do Motor</td>
-                                            <td>150R$</td>
-                                            <td>
-                                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                            </td>
-                                        </tr> 
-
-                                    </tbody>
-
-                                </table>
-
-
+                                </div>                  
                             </div>
-
                         </div>
-                   
                     </li>
 
                     <li>
@@ -341,7 +326,6 @@
                                                                         <button class="btn btn-info" name="btnSalvar" onclick="">Calcular</button>
                                                                     </center>
                                                             </form>
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -375,25 +359,28 @@
                                                             </div>
                                                             </hr>
                                                             <!-- /. ROW  -->
-
-                                                            <form class="contact-form row">
-                                                                <div class="form-field col x-100">
-                                                                    <label>Nome</label>
-                                                                    <input class="form-control" placeholder="Digite o nome" name="nome_alt" id="nome_alt"/>
-                                                                    <label class="Validar"id="val_nome"</label>
-                                                                </div>
-                                                                <div class="form-field col x-100">
-                                                                    <label>Email</label>
-                                                                    <input class="form-control" placeholder="Digite o email" name="nome_alt" id="nome_alt"/>
-                                                                    <label class="Validar"id="val_nome"</label>
-                                                                </div>
-                                                                <div class="form-field col x-100">
-                                                                    <textarea id="message" class="form-control" placeholder="Digite aqui..."></textarea>
-                                                                    <label class="label" for="message"></label>
-                                                                </div>
-                                                                <div class="form-field col x-100 align-center">
-                                                                    <input class="submit-btn" type="submit" value="Enviar">
-                                                                </div>
+                                                            <form action="#" method="post">
+                                                                <div id="divGeral">                        
+                                                                    <div class="form-group">
+                                                                        <label>Nome</label>
+                                                                        <input class="form-control" placeholder="Digite aqui..." name="pertunta1" id="pertunta1"/>
+                                                                    </div>
+                                                                    <div id="divGeral">                        
+                                                                        <div class="form-group">
+                                                                            <label>e-mail</label>
+                                                                            <input class="form-control" placeholder="Digite aqui..." name="pertunta2" id="pertunta2"/>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label>Sujestão</label>
+                                                                            <textarea class="form-control tel" placeholder="Digite aqui..." name="pertunta3" id="pertunta3"></textarea>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr/>
+                                                                    <center>        
+                                                                        <button class="btn btn-success" name="btnSalvar" onclick="">Salvar</button>
+                                                                    </center>
                                                             </form>
                                                         </div>
                                                     </div>
